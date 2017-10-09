@@ -63,7 +63,7 @@ public class FakePhoneActivity extends AppCompatActivity {
 
 
     public void call ( View v){
-        
+
 
        /* String message =
 
