@@ -4,4 +4,5 @@
     <string name="calling">Llamando</string>
     <string name="close">Cerrar</string>
     <string name="number">"Numero: "</string>
+    <string name="start_over">Volver</string>
 </resources>

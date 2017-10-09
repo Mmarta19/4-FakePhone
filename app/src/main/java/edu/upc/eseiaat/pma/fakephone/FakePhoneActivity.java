@@ -41,6 +41,12 @@ public class FakePhoneActivity extends AppCompatActivity {
 
     }
 
+    private void startOver() {
+        final_num = (EditText) findViewById(R.id.label_phone);
+        final_num.setText(total_phone.getText().toString());
+
+    }
+
 
 
     public void click (View v){
@@ -57,7 +63,7 @@ public class FakePhoneActivity extends AppCompatActivity {
 
 
     public void call ( View v){
-        // TODO poder tornar a la pantalla dels numeros sense borrar-los
+        
 
        /* String message =
 
@@ -71,6 +77,8 @@ public class FakePhoneActivity extends AppCompatActivity {
 
       builder.setMessage(c+(final_num.getText())); // el contenido
         builder.setCancelable(true); // no se puede ir para atras
+
+
        /*builder.setPositiveButton(R.string.close, new DialogInterface.OnClickListener() { // Esta okei, acabar
             @Override
            public void onClick(DialogInterface dialogInterface, int i) {
@@ -80,13 +88,12 @@ public class FakePhoneActivity extends AppCompatActivity {
         });*/
 
 
-       /* builder.setNegativeButton(R.string.start_over, new DialogInterface.OnClickListener() { // no, quiero volver a hacer el quiz
+       builder.setNegativeButton(R.string.start_over, new DialogInterface.OnClickListener() { // no, m'he he equivocado
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 startOver();
-                // borrar respuestas y volver al principio
             }
-        }) ;*/
+        });
         builder.create().show(); // crearlo
 
     }
